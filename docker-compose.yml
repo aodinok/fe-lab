@@ -1,0 +1,16 @@
+version: '2'
+services:
+  web:
+    image: nginx
+    ports:
+     - 8080:80
+    volumes:
+     - ./web/dist:/usr/share/nginx/html
+  db:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+  be:
+    build: ./server
+    ports:
+     - "3000:3000"

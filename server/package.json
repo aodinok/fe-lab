@@ -1,0 +1,14 @@
+{
+  "name": "fe-lab-be",
+  "version": "1.0.0",
+  "description": "Backend for frontend lab",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "aodinok",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
