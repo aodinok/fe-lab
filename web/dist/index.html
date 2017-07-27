@@ -8,10 +8,20 @@
   <style></style>
 
   <script src="script.js"></script>
-  <script></script>
+  <script>
+  function fetchUsers() {
+    fetch('/api/1.0/users').then((data) => {
+      data.json().then((users) => {
+        document.getElementById('users').innerHTML = JSON.stringify(users)
+      })
+    })
+  }
+  </script>
 </head>
 
 <body>
   Hello World!
+  <button onclick="fetchUsers()">Fetch users</button>
+  <div id="users"></div>
 </body>
 </html>
