@@ -2,26 +2,10 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <title>Hello World!</title>
-
-  <link rel="stylesheet" href="style.css"/>
-  <style></style>
-
-  <script src="script.js"></script>
-  <script>
-  function fetchUsers() {
-    fetch('/api/1.0/users').then((data) => {
-      data.json().then((users) => {
-        document.getElementById('users').innerHTML = JSON.stringify(users)
-      })
-    })
-  }
-  </script>
+  <title>Simple blog</title>
 </head>
-
 <body>
-  Hello World!
-  <button onclick="fetchUsers()">Fetch users</button>
-  <div id="users"></div>
+  <div id="root"></div>
+  <script src="bundle.js"></script>
 </body>
 </html>

@@ -63,3 +63,7 @@ typings/
 
 
 # End of https://www.gitignore.io/api/node
+
+# app bundle
+web/dist/bundle.js
+web/dist/bundle.js.map
