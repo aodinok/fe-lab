@@ -3,9 +3,13 @@ services:
   web:
     build: ./web
     ports:
-      - 8080:80
+      - 80:80
     depends_on:
       - "be"
+    command: ["npm", "start"]
+    volumes:
+      - './web/src:/usr/src/app/src'
+    tty: true
   db:
     image: mysql
     environment:

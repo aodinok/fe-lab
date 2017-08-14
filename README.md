@@ -5,10 +5,10 @@ Simple application to play with docker/nginx/sequelize.
 
 ```docker-compose up```
 
-Application should be available on address: `http://localhost:8080/`
+Application should be available on address: `http://localhost/`
 
-## To start web application in development mode use command:
+## To start web application in production mode use command:
 
-```npm start``` in web subfolder
+```docker-compose -f docker-compose.yml -f docker-compose.prod.yml up```
 
-Application should be opened automatically in browser
+Application should be available on address: `http://localhost/`

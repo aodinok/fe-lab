@@ -23,6 +23,3 @@ COPY . .
 
 # Build app to dist
 RUN npm run build
-
-# Copy built app files to nginx root
-RUN mv ./dist/* /usr/share/nginx/html/
