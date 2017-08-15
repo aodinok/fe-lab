@@ -1,6 +1,10 @@
 # fe-lab
 Simple application to play with docker/nginx/sequelize.
 
+## Prerequisites
+
+* Install docker
+
 ## To start application use command:
 
 ```docker-compose up```

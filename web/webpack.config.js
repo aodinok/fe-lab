@@ -10,7 +10,12 @@ module.exports = {
   devServer: {
     host: '0.0.0.0',
     port: 80,
-    contentBase: './dist'
+    contentBase: path.resolve(__dirname, 'dist'),
+    proxy: {
+      '/api/1.0/*' : {
+        target: 'http://be:3000/'
+      }
+    }
   },
   module: {
     rules: [
